@@ -1,0 +1,361 @@
+/* Desain-in Aja CSS Template */
+
+/*	Overrides */
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  font-size: 30px;
+}
+
+.navbar-custom {
+  background-color: black;
+  opacity: 50%;
+}
+
+#jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-image: linear-gradient(to bottom, #f400ff, #f642ff, #f860ff, #f978ff, #fa8dff);
+}
+
+#about {
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+  background-image: linear-gradient(to bottom, #fa8dff, #bfa8ff, #79bdff, #2bcbff, #00d3ff);
+}
+#projects {
+  padding-bottom: 6rem;
+  background-image: linear-gradient(to bottom, #00d3ff, #00e1fb, #00eee8, #00f8c7, #00ff9b);
+}
+#footer {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+  background-image: linear-gradient(to bottom, #00ff9b, #6aff7d, #9cff5d, #c9ff3a, #f4ff00);
+}
+.container-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.logo {
+  padding-top: 5rem;
+  margin-bottom: 150px;
+}
+.logo-brand {
+  width: 50%;
+  z-index: 2;
+}
+.art {
+  position: absolute;
+  left: 570px;
+  top: 7rem;
+  overflow: visible;
+  width: 20%;
+  z-index: 1;
+}
+.line-arrow {
+  position: absolute;
+  left: 350px;
+  top: 20rem;
+  overflow: visible;
+  width: 20%;
+}
+hr.bold {
+  border: 4px solid;
+  border-color: black;
+}
+
+.line-arrow-2 {
+  position: absolute;
+  left: 1100px;
+  top: 65rem;
+  overflow: visible;
+  width: 20%;
+  width: 15%;
+}
+
+.da-img-logo {
+  padding-top: 150px;
+}
+.card {
+  background: transparent;
+  border: transparent;
+}
+
+.da-page-cols-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.da-gallery {
+  max-width: 960px;
+}
+.da-gallery-item {
+  width: 100%;
+}
+.da-gallery-item figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 5;
+  background: #3085a3;
+  text-align: center;
+  cursor: pointer;
+}
+.da-gallery-item figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8;
+}
+.da-gallery-item figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.da-gallery-item figure figcaption::before,
+.da-gallery-item figure figcaption::after {
+  pointer-events: none;
+}
+.da-gallery-item figure figcaption,
+.da-gallery-item figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.da-gallery-item figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+.da-gallery-item figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+.da-gallery-item figure h2 span {
+  font-weight: 800;
+}
+
+.da-gallery-item figure h2,
+.da-gallery-item figure p {
+  margin: 0;
+}
+
+.da-gallery-item figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+/*---------------*/
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+  background: #aa4033;
+}
+
+figure.effect-bubba img {
+  opacity: 1;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+  opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  content: "";
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+figure.effect-bubba figcaption::after {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: scale(1, 0);
+  transform: scale(1, 0);
+}
+
+figure.effect-bubba h2 {
+  font-size: 1.5rem;
+  padding-top: 20%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(0, -20px, 0);
+  transform: translate3d(0, -20px, 0);
+}
+
+figure.effect-bubba p {
+  width: 100%;
+  padding: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0, 20px, 0);
+  transform: translate3d(0, 20px, 0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* AKHIR BUBBA EFFECT */
+
+@media (max-width: 1024px) {
+  .da-gallery {
+    max-width: 800px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .da-gallery-item {
+    width: 100%;
+  }
+  .filters-button-group {
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+  figure.effect-bubba h2 {
+    font-size: 0.9rem;
+  }
+  .art {
+    position: absolute;
+    left: 370px;
+    top: 5rem;
+    width: 35%;
+  }
+  .logo-brand {
+    width: 90%;
+    z-index: 2;
+  }
+  .line-arrow {
+    position: absolute;
+    left: 100px;
+    top: 24rem;
+    overflow: visible;
+    width: 30%;
+  }
+
+  .line-arrow-2 {
+    position: absolute;
+    left: 700px;
+    top: 65rem;
+    overflow: visible;
+    width: 20%;
+    width: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .da-gallery {
+    max-width: 500px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .da-gallery-item {
+    width: 100%;
+  }
+  .filters-button-group {
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+  figure.effect-bubba h2 {
+    font-size: 0.9rem;
+  }
+  .art {
+    position: absolute;
+    left: 280px;
+    top: 10rem;
+    width: 35%;
+  }
+  .logo-brand {
+    width: 80%;
+    z-index: 2;
+  }
+  .line-arrow {
+    position: absolute;
+    left: 100px;
+    top: 17rem;
+    overflow: visible;
+    width: 40%;
+  }
+
+  .line-arrow-2 {
+    position: absolute;
+    left: 400px;
+    top: 45rem;
+    overflow: visible;
+    width: 20%;
+    width: 40%;
+  }
+}
+@media (max-width: 414px) {
+  .da-gallery {
+    max-width: 280px;
+  }
+
+  .da-gallery-item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .art {
+    position: absolute;
+    left: 150px;
+    top: 10rem;
+    width: 35%;
+  }
+  .logo-brand {
+    width: 90%;
+    z-index: 2;
+  }
+  .line-arrow {
+    position: absolute;
+    left: 100px;
+    top: 27.5rem;
+    overflow: visible;
+    width: 40%;
+  }
+
+  .line-arrow-2 {
+    position: absolute;
+    left: 130px;
+    top: 225rem;
+    overflow: visible;
+    width: 20%;
+    width: 40%;
+  }
+}
